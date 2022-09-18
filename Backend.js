@@ -109,7 +109,7 @@ app.post('/submit_WebD', (req, res)=>{
     }, 3000);
 })
 
-app.get("/yash", (req, res)=>{
+app.get("/", (req, res)=>{
     res.sendFile(path.join(__dirname, 'Public/index.html'));
 })
 // console.log(path.json(__dirname, 'index.html'))
