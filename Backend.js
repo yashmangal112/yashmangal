@@ -106,15 +106,15 @@ app.post('/submit_WebD', (req, res)=>{
     }, 3000);
 })
 
-// app.get("/", (req, res)=>{
-//     res.set({
-//         "Allow-access-Allow-Origin": '*'
-//     })
-//     setTimeout(() => {
-//         console.log('Site reload')
-//       }, 3000);
-//     return res.redirect('index.html');
-// }).listen(3000)
+app.get("/", (req, res)=>{
+    res.set({
+        "Allow-access-Allow-Origin": '*'
+    })
+    setTimeout(() => {
+        console.log('Site reload')
+      }, 3000);
+    return res.redirect('index.html');
+}).listen(3000)
 
 
 
