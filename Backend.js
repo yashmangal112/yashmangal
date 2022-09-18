@@ -107,7 +107,7 @@ app.post('/submit_WebD', (req, res)=>{
     }, 3000);
 })
 
-app.post("/", (req, res)=>{
+app.get("/", (req, res)=>{
     res.sendFile(path.json(__filename, "index.html"));
 })
 
