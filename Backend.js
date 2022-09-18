@@ -106,9 +106,9 @@ app.post('/submit_WebD', (req, res)=>{
     }, 3000);
 })
 
-app.get("/", (req, res)=>{
-    return res.redirect('index.html');
-})
+// app.get("/", (req, res)=>{
+//     return res.redirect('index.html');
+// })
 
 
 
