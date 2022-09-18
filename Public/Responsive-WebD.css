@@ -1,0 +1,136 @@
+@media screen and (min-width:954px){
+    .menu-btn .fa.fa-bars{
+        display: none;
+    }
+}
+@media screen  and (max-width:991px){
+    .project-wrap-grid{
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+    .project-wrap{
+        max-width: 100%;
+    }
+    .footer-grid {
+        max-width: 100%;
+        grid-column-gap: 20px;
+        grid-template-columns: 1.4fr 1fr;
+    }
+    .max-width {
+        padding: 0 50px;
+    }
+    
+}
+@media screen  and (max-width:953px){
+    .max-width{
+        max-width: 800px;
+    }
+    .contact .contact-content {
+        grid-row-gap: 30px;
+        grid-template-columns: 1fr;
+    }
+    .footer-grid {
+        max-width: 100%;
+        grid-column-gap: 20px;
+        grid-template-columns: 1.4fr 1fr;
+    }
+
+    /* For menu btn */
+    .menu-btn{
+        display:block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content:"\f00d";
+        background-color: black;
+    }
+    .navbar .menu{
+        position:fixed;
+        height:100vh;
+        width:100%;
+        left:-100%;
+        top:0;
+        background-color: #111;
+        text-align: center;
+        padding-top:80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left:0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu .menu-btn{
+        display: inline-block;
+        margin: 20px 0;
+        font-size:25px;
+    }    
+    .navbar .menu .drop-down a{
+        display:none;
+    }
+}
+@media screen  and (max-width:818px){
+    .WebDProject{
+        font-size: 44px;
+    }
+    h1{
+        line-height: 41px;
+    }
+    .breadcrumb-flex{
+        margin-top: 15px;
+    }
+}
+@media screen  and (max-width:767px){
+    .project-wrap-grid{
+        grid-template-columns: 1fr;
+    }
+    .footer-grid{
+        margin-bottom: 15px;
+        grid-row-gap: 20px;
+        grid-template-columns: 1fr;
+    }
+    .grid.right {
+        justify-self: flex-start;
+        /* justify-self: end; */
+    }
+    .email-phone {
+        margin-top: 30px;
+        /* display: flex; */
+        text-align: start;
+    }
+}
+@media screen  and (max-width:685px){
+    .max-width{
+        padding:0 23px;
+        margin-left: 0px;
+        
+    }
+    .WebDProject{
+        font-size: 35px;
+    }
+    .breadcrumb-flex{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:561px){
+    .main .hero .hero-text{
+        width: 90%;
+    }
+}
+@media screen and (max-width:433px){
+    .main .hero .hero-text{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:422px){
+    .WebDProject{
+        font-size: 31px;
+    }
+    /* .sep-site{
+        display: none;
+    } */
+}
