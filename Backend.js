@@ -108,7 +108,7 @@ app.post('/submit_WebD', (req, res)=>{
 })
 
 app.get("/yash", (req, res)=>{
-    res.sendFile(path.json(__dirname, "Public/index.html"));
+    res.sendFile(path.json(__dirname, 'index.html'));
 })
 
 
