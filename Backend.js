@@ -6,6 +6,10 @@ const app = express();
 
 const port = process.env.PORT || '3000';
 
+app.get("/", (req, res)=>{
+    (res.sendFile(path.join(__dirname, 'Public/index.html')));
+})
+// console.log(path.join(__dirname, 'Public/index.html'))
 app.use(bodyParser.json())
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(bodyParser.urlencoded({
@@ -21,6 +25,7 @@ var db = mongoose.connection;
 
 // console.log(path.join(__dirname, 'Public/index.html'));
 // console.log(path.json(__dirname, 'index.html'))
+// console.log(path.join(__dirname, 'Public/index.html'));
 // db.once('connection', ()=>{
 //     console.log('Ah, we have our first user!');
 // })
@@ -109,10 +114,7 @@ app.post('/submit_WebD', (req, res)=>{
     }, 3000);
 })
 
-app.get("/", (req, res)=>{
-    res.sendFile(path.join(__dirname, 'Public/index.html'));
-})
-// console.log(path.json(__dirname, 'index.html'))
+
 
 
 // const server = http.createServer((req, res)=>{
