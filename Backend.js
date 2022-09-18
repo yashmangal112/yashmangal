@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const app = express();
@@ -106,8 +107,8 @@ app.post('/submit_WebD', (req, res)=>{
     }, 3000);
 })
 
-app.get("/", (req, res)=>{
-    res.send('Hello world')
+app.post("/", (req, res)=>{
+    res.sendFile(path.json(__filename, "index.html"));
 })
 
 
