@@ -6,10 +6,7 @@ const app = express();
 
 const port = process.env.PORT || '3000';
 
-app.get("/", (req, res)=>{
-    res.statusCode = 200;
-    (res.sendFile(path.join(__dirname, 'Public/index.html')));
-})
+
 // console.log(path.join(__dirname, 'Public/index.html'))
 app.use(bodyParser.json())
 app.use(express.static(path.join(__dirname, 'public')))
@@ -25,6 +22,10 @@ mongoose.connect('mongodb://0.0.0.0:27017/Yash-Portfolio', {
 var db = mongoose.connection;
 
 // console.log(path.join(__dirname, 'Public/index.html'));
+app.get("/", (req, res)=>{
+    res.statusCode = 200;
+    (res.sendFile(path.join(__dirname, 'Public/index.html')));
+})
 // console.log(path.json(__dirname, 'index.html'))
 // console.log(path.join(__dirname, 'Public/index.html'));
 // db.once('connection', ()=>{
