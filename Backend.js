@@ -107,9 +107,7 @@ app.post('/submit_WebD', (req, res)=>{
 })
 
 app.get("/", (req, res)=>{
-    res.statusCode = 200;
-    const index = fs.readFileSync('index.html');
-    return res.end(index.toString());
+    res.send('Hello world')
 })
 
 
