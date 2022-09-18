@@ -19,6 +19,8 @@ mongoose.connect('mongodb://0.0.0.0:27017/Yash-Portfolio', {
 
 var db = mongoose.connection;
 
+// console.log(path.join(__dirname, 'Public/index.html'));
+// console.log(path.json(__dirname, 'index.html'))
 // db.once('connection', ()=>{
 //     console.log('Ah, we have our first user!');
 // })
@@ -108,9 +110,9 @@ app.post('/submit_WebD', (req, res)=>{
 })
 
 app.get("/yash", (req, res)=>{
-    res.sendFile(path.json(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, 'Public/index.html'));
 })
-
+// console.log(path.json(__dirname, 'index.html'))
 
 
 // const server = http.createServer((req, res)=>{
