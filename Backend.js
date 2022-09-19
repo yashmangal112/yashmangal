@@ -9,8 +9,8 @@ const port = process.env.PORT || 3000;
 
 // console.log(path.join(__dirname, 'Public/index.html'))
 app.use(bodyParser.json())
-app.use(express.static(__dirname + '/public'));
-// console.log((__dirname + '/public'));
+app.use(express.static(path.join(__dirname + '/public')));
+// console.log(path.join(__dirname + '/public'));
 app.use(bodyParser.urlencoded({
     extended:true
 }))
