@@ -84,7 +84,7 @@ app.post('/submit', (req, res)=>{
 
     setTimeout(() => {
         console.log('Site reload')
-        return res.sendFile(path.join(__dirname, '/Public/index.html'))   // changes
+        return res.redirect('index.html')    // changes
     }, 3000);
 })
 
@@ -110,7 +110,7 @@ app.post('/submit_Ux', (req, res)=>{
 
     setTimeout(() => {
         console.log('Site reload of UX Design Projects')
-        return res.sendFile(path.join(__dirname, '/Public/UxDesignProjects.html'))   // changes
+        return res.redirect('UxDesignProjects.html')    // changes
     }, 3000);
 })
 
@@ -136,7 +136,7 @@ app.post('/submit_WebD', (req, res)=>{
 
     setTimeout(() => {
         console.log('Site reload of WebD Projects')
-        return res.sendFile(path.join(__dirname, '/Public/WebDProjects.html'))   // changes
+        return res.redirect('WebDProjects.html')    // changes
     }, 3000);
 })
 
