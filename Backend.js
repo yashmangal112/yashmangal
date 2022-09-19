@@ -31,6 +31,10 @@ app.get("/", (req, res)=>{
     res.statusCode = 200;
     (res.sendFile(path.join(__dirname, '/Public/index.html')));
 })
+app.get("/index.html", (req, res)=>{
+    res.statusCode = 200;
+    (res.sendFile(path.join(__dirname, '/Public/index.html')));
+})
 app.get("/UxDesignProjects.html", (req, res)=>{
     res.statusCode = 200;
     (res.sendFile(path.join(__dirname, '/Public/UxDesignProjects.html')));
