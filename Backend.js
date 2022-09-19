@@ -27,22 +27,22 @@ var db = mongoose.connection;
 
 
 
-// app.get("/", (req, res)=>{
-//     res.statusCode = 200;
-//     (res.sendFile(path.join(__dirname, '/Public/index.html')));
-// })
-// app.get("/UxDesignProjects", (req, res)=>{
-//     res.statusCode = 200;
-//     (res.sendFile(path.join(__dirname, '/Public/UxDesignProjects.html')));
-// })
-// app.get("/WebDesignProjects", (req, res)=>{
-//     res.statusCode = 200;
-//     (res.sendFile(path.join(__dirname, '/Public/WebDesignProjects')));
-// })
-// app.get("/yash", (req, res)=>{
-//     res.statusCode = 200;
-//     res.send("Hey yash");
-// })
+app.get("/", (req, res)=>{
+    res.statusCode = 200;
+    (res.sendFile(path.join(__dirname, '/Public/index.html')));
+})
+app.get("/UxDesignProjects.html", (req, res)=>{
+    res.statusCode = 200;
+    (res.sendFile(path.join(__dirname, '/Public/UxDesignProjects.html')));
+})
+app.get("/WebDesignProjects.html", (req, res)=>{
+    res.statusCode = 200;
+    (res.sendFile(path.join(__dirname, '/Public/WebDesignProjects.html')));
+})
+app.get("/yash", (req, res)=>{
+    res.statusCode = 200;
+    res.send("Hey yash");
+})
 
 
 
