@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 
 // console.log(path.join(__dirname, 'Public/index.html'))
 app.use(bodyParser.json())
-app.use(express.static(path.join(__dirname + '/public')));
+app.use(express.static(path.join(__dirname + '/Public')));
 // console.log(path.join(__dirname + '/public'));
 app.use(bodyParser.urlencoded({
     extended:true
@@ -23,13 +23,24 @@ mongoose.connect('mongodb://0.0.0.0:27017/Yash-Portfolio', {
 var db = mongoose.connection;
 
 // console.log(path.join(__dirname, 'Public/index.html'));
+// console.log(path.join(__dirname, '/Public/index.html'));
 
-
-// app.get("/", (req, res)=>{
-//     res.statusCode = 200;
-//     (res.sendFile(path.join(__dirname, 'Public/index.html')));
-// })
-
+app.get("/", (req, res)=>{
+    res.statusCode = 200;
+    (res.sendFile(path.join(__dirname, '/Public/index.html')));
+})
+app.get("/UxDesignProjects", (req, res)=>{
+    res.statusCode = 200;
+    (res.sendFile(path.join(__dirname, '/Public/UxDesignProjects.html')));
+})
+app.get("/WebDesignProjects", (req, res)=>{
+    res.statusCode = 200;
+    (res.sendFile(path.join(__dirname, '/Public/WebDesignProjects')));
+})
+app.get("/yash", (req, res)=>{
+    res.statusCode = 200;
+    res.send("Hey yash");
+})
 
 // console.log(path.json(__dirname, 'index.html'))
 // console.log(path.join(__dirname, 'Public/index.html'));
