@@ -35,9 +35,9 @@ app.get("/UxDesignProjects.html", (req, res)=>{
     res.statusCode = 200;
     (res.sendFile(path.join(__dirname, '/Public/UxDesignProjects.html')));
 })
-app.get("/WebDesignProjects.html", (req, res)=>{
+app.get("/WebDProjects.html", (req, res)=>{
     res.statusCode = 200;
-    (res.sendFile(path.join(__dirname, '/Public/WebDesignProjects.html')));
+    (res.sendFile(path.join(__dirname, '/Public/WebDProjects.html')));
 })
 app.get("/yash", (req, res)=>{
     res.statusCode = 200;
