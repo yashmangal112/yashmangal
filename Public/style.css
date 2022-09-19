@@ -309,7 +309,7 @@ section{
 }
 .about .about-content .right a:focus{
     outline: 0;
-    box-shadow: 0px 0px 0px 4px lightsteelblue ;
+    box-shadow: 0px 0px 0px 4px #5cebdf ;
 }
 .projects .title::before, 
 .position .title::before
