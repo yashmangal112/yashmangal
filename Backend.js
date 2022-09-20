@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({
     extended:true
 }))
 
-mongoose.connect('mongodb://0.0.0.0:27017/Yash-Portfolio', {
+mongoose.connect('mongodb+srv://yashmangal:yashmangal123@cluster0.vhdxjpj.mongodb.net/Portfolio', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
