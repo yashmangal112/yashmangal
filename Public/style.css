@@ -57,7 +57,7 @@ div{
 
 }
 .navbar.sticky  .menu li a:hover{
-    color:#fff;
+    color:#252525;
 }
 
 .max-width {
@@ -340,7 +340,7 @@ section{
 .position .title::after
 {
     background-color:#111;
-    content: "My New Role";
+    content: "My Roles";
 }
 .projects .edu-content .card {
     width: calc(33% - 30px);
@@ -740,6 +740,10 @@ h2 {
     transition: all 1000ms ease;
     max-width: 43px;                             /* change */
     box-shadow: -1px 2px 8px inset;
+}
+.peofile-icon-wrap:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 8px;
 }
 .contact .contact-content .info .head {
     font-weight: 500;

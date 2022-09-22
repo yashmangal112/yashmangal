@@ -568,14 +568,14 @@ section .title::after {
     margin-bottom: 12px;
 }
 .contact .contact-content .row i {
-    text-shadow: 2px 2px 10px ;
+    text-shadow: 2px 2px -1px ;
     margin-right: 8px;
     font-size: 21px;
     color: crimson;
 }
 .contact .contact-content .touch-profile i{
     /* color: rgba(32, 24, 24, 0.993); */
-    color: rgb(0, 5, 29);
+    color: rgb(189 191 201);
     font-size: 21px;
 }
 .peofile-icon-wrap{
@@ -591,6 +591,10 @@ section .title::after {
     transition: all 1000ms ease;
     max-width: 43px;                             /* change */
     box-shadow: -1px 2px 8px inset;
+}
+.peofile-icon-wrap:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 8px;
 }
 .contact .contact-content .info .head {
     font-weight: 500;
