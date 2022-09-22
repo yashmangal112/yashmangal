@@ -60,7 +60,26 @@ var typed = new Typed(".typing-2", {
 });
 
 
+// Script for floating screen 
+const section = document.querySelectorAll("section");
+const navli = document.querySelectorAll("nav .menu li");
 
+window.onscroll = ()=>{
+    var current = "";
+    section.forEach((section)=>{
+        const sectionTop = section.offsetTop;
+
+        if (pageYOffset >= sectionTop-60) {
+            current = section.getAttribute("id");
+        }
+    });
+    navli.forEach((li)=>{
+        li.classList.remove("check");
+        if (li.classList.contains("current")) {
+            li.classList.add("check");
+        }
+    });
+}
 
 
 
