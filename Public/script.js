@@ -60,26 +60,12 @@ var typed = new Typed(".typing-2", {
 });
 
 
-// Script for floating screen 
-const section = document.querySelectorAll("section");
-const navli = document.querySelectorAll("nav .menu li");
+// Script for scrolling section screen 
 
-window.onscroll = ()=>{
-    var current = "";
-    section.forEach((section)=>{
-        const sectionTop = section.offsetTop;
-
-        if (pageYOffset >= sectionTop-60) {
-            current = section.getAttribute("id");
-        }
-    });
-    navli.forEach((li)=>{
-        li.classList.remove("check");
-        if (li.classList.contains("current")) {
-            li.classList.add("check");
-        }
-    });
-}
+$("a").click(function(){
+    var pageId = $(this).attr("data-max-width");
+    $("html, body").animate({ scrollTop: $("#"+pageId).offset().top }, 850);
+});
 
 
 

@@ -256,7 +256,7 @@ section {
 }
 .about .div-img-bg {
     padding-bottom: 30px;
-    border: 20px solid gray;
+    border: 20px solid #623a3a;
 }
 
 .about .div-img-bg .about-img img {
@@ -1246,3 +1246,4 @@ footer .profile-lite a:hover{
   .animated-arrow > .main > .the-arrow {
     position: relative;
   }
+
