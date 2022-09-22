@@ -56,10 +56,12 @@ div{
     color:crimson;
 
 }
-.navbar.sticky  .menu li a:hover{
+.navbar.sticky  .menu li .menu-btn:hover{
     color:#252525;
 }
-
+.navbar.sticky  .menu li .drop-down a:hover{
+    color: white;
+}
 .max-width {
     max-width: 1300px;
     padding: 0 80px;
