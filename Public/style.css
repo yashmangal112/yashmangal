@@ -1310,3 +1310,68 @@ footer .profile-lite a:hover{
     position: relative;
   }
 
+
+
+
+/* Slidebar-socialmedia css */
+
+
+.slidebar{
+    position: fixed;
+    top: 250px;
+}
+.slidebar ul {
+    padding: 10px;
+    width: 15px;
+    transform: translate(-270px, 0);
+}
+.slidebar ul li {
+    display: block;
+    margin: 5px;
+    background: #a6a5f7;;
+    /* background: #f16593; */
+    width: 300px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 0 30px 30px 0;
+    transition: all 1.5s;
+    color: #f9c5d1;
+}
+.slidebar ul li:hover{
+    transform: translate(100px, 0);
+    background: #5D5BF7;;
+    transition: all 1.5s;
+    text-decoration: none;
+    color: #f9c5d1;
+}
+.slidebar ul li:hover a{
+    margin: 0px 2px 5px 2px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.slidebar ul li a{
+    margin: 0px 2px 5px 2px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.slidebar span{
+    font-family: 'Poppins',sans-serif;
+    color: #121212;
+}
+.slidebar img{
+    transform: rotate(0deg);
+    margin-left: 8px;
+    width: 25px;
+    height: auto;
+}
+.slidebar ul li:hover img{
+    transition: all 1.5s;
+    transform: rotate(360deg);
+}
