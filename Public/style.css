@@ -1319,7 +1319,19 @@ footer .profile-lite a:hover{
 .slidebar{
     position: fixed;
     top: 250px;
+    -webkit-animation: linear 1.4s;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 1s;
 }
+@-webkit-keyframes run {
+    0% {
+      left: -200px;
+    }
+    100% {
+      left: 10px;    
+    }
+  }
+  
 .slidebar ul {
     padding: 10px;
     width: 15px;
