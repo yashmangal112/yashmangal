@@ -105,3 +105,14 @@
 .style-switcher .color-6{
     background-color: #12a6e0;
 }
+
+@media only screen and (max-width:884px){
+    .style-switcher{
+        width: 150px;
+    }
+}
+@media only screen and (max-width:550px){
+    .style-switcher{
+        width: 105px;
+    }
+}
