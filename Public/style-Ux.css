@@ -887,3 +887,50 @@ footer .profile-lite a:hover{
 .rowf.left{
     text-align: center;
 }
+
+.cacs_video img{
+    width: -webkit-fill-available;
+    margin-bottom: 30px;
+    max-width: 100%;
+    border-radius: 4px;
+    display: block;
+    box-shadow: 0 16px 25px 0 rgb(0 0 0 / 46%);
+    outline: 0;
+    transition: transform 800ms ease;
+}
+.cacs_video img:hover{
+    transform: scale(1.09);
+    /* transform: scale(1.5); */
+}
+.cacs_video button{
+    transition: transform 800ms ease;
+    cursor: pointer;
+}
+.cacs_video button:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 8px;
+}
+.cacs_video{
+    position: relative;
+}
+.cacs_link{
+    position: absolute;
+    display: block;
+    background: url(images/play-button-removebg-preview.png);
+    height: 50px;
+    width: 50px;
+    top: 83%;
+    left: 50%;
+    margin: -20px 0 0 -20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 73%;
+    /* background: border-box; */
+    border: 0;
+    /* box-shadow: inset 2px 2px 5px black; */
+    filter: drop-shadow(2px 2px 5px black);
+    /* border: 2px solid white; */
+    /* bottom: -224%;
+    left: 68%; */
+ }

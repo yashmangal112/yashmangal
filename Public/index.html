@@ -31,6 +31,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Responsive.css">
     <link rel="icon" href="logo2.jpg" style="height: 132px;">
+
+    <!-- theme Css -->
+    <link rel="stylesheet" class="alternate-style" title="color-1" href="theme/css/color-1.css">
+    <link rel="stylesheet" class="alternate-style" title="color-2" href="theme/css/color-2.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-3" href="theme/css/color-3.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-4" href="theme/css/color-4.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-5" href="theme/css/color-5.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-6" href="theme/css/color-6.css" disabled>
+    <link rel="stylesheet" href="theme/css/color-switcher.css">
+
+
     <!-- font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,6 +55,7 @@
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/cc5705a974.js" crossorigin="anonymous"></script>
     <!-- favicon icon -->
     <link rel="icon" href="favicon.ico?v=2">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
@@ -120,6 +132,38 @@
         </ul>
     </div>
 
+    <!--              Style Switcher                    -->
+    <div class="style-switcher outer-shadow">
+        <div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow ">
+            <i class="fa-solid fa-palette"></i>
+            <!-- <i class="fas fa-cog fa-spin"></i> -->
+            <!-- <i class="fa-solid fa-wand-magic-sparkles"></i> -->
+        </div>
+
+        <h4>Theme Colors</h4>
+        <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')">
+
+        </span>
+        <span class="color-2" onclick="setActiveStyle('color-2')">
+
+        </span>
+        <span class="color-3" onclick="setActiveStyle('color-3')">
+
+        </span>
+        <span class="color-4" onclick="setActiveStyle('color-4')">
+
+        </span>
+        <span class="color-5" onclick="setActiveStyle('color-5')">
+
+        </span>
+        <span class="color-6" onclick="setActiveStyle('color-6')">
+
+        </span>
+        </div>
+    </div>
+
+
     <!-- home section start -->
     <section class="home" id="home">
         <div class="max-width">
@@ -154,7 +198,7 @@
                     </div>
                   </div>
                 <div class="column right">
-                    <div class="text">I'm Yash and I'm a <span class="typing-2" style="color: crimson;"></span></div>
+                    <div class="text">I'm Yash and I'm a <span class="typing-2"></span></div>
                     <p>2nd year undergraduate at Indian Institute of Information Technology, Kota
                         pursuing B.Tech in Electronics and Communication Engineering.
                         My interest deeply revolves around Exploring, Learning and Thinking Data-Structures
@@ -280,52 +324,82 @@
                     <div class="skills-wrap">
                         <div class="wrap">
                             <div class="green-icon">
-                                <i class="fa fa-user" style="font-size: 26px;" ></i>
+                                <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/32/null/external-ui-design-computer-science-flaticons-flat-flat-icons.png"/>
                             </div>
                             <p class="skill-write">UI Design</p>
                         </div>
                         <div class="wrap">
                             <div class="green-icon">
-                                <i class="fa fa-user" style="font-size: 26px;" ></i>
+                                <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/32/null/external-ux-design-computer-science-flaticons-flat-flat-icons.png"/>
                             </div>
                             <p class="skill-write">UX Design</p>
                         </div>
                         <div class="wrap">
                             <div class="green-icon">
-                                <i class="fa fa-user" style="font-size: 26px;" ></i>
+                                <img src="images/java.png" alt="">
                             </div>
                             <p class="skill-write">Java</p>
                         </div>
                         <div class="wrap">
                             <div class="green-icon">
-                                <i class="fa fa-user" style="font-size: 26px;" ></i>
+                                <img src="images/algorithm.png" alt="">
                             </div>
                             <p class="skill-write">DS & Algo</p>
                         </div>
                         <div class="wrap">
                             <div class="green-icon">
-                                <i class="fa fa-user" style="font-size: 26px;" ></i>
+                                <img src="https://img.icons8.com/color/32/null/mongodb.png"/>
                             </div>
                             <p class="skill-write">MongoDB</p>
                         </div>
                         <div class="wrap">
                             <div class="green-icon">
-                                <i class="fa fa-user" style="font-size: 26px;" ></i>
+                                <img src="images/github.png" alt="">
                             </div>
                             <p class="skill-write">GitHub</p>
                         </div>
                         <div class="wrap">
                             <div class="green-icon">
-                                <i class="fa fa-user" style="font-size: 26px;" ></i>
+                                <img src="https://img.icons8.com/color/24/null/material-ui.png"/>
                             </div>
-                            <p class="skill-write">Frontend WebD</p>
-                        </div>
+                            <p class="skill-write">mui</p>
+                        </div>  
                         <div class="wrap">
                             <div class="green-icon">
-                                <i class="fa fa-user" style="font-size: 26px;" ></i>
+                                <img src="https://img.icons8.com/color/32/null/nodejs.png"/>
                             </div>
                             <p class="skill-write">Node.JS</p>
                         </div>       
+                        <div class="wrap">
+                            <div class="green-icon">
+                                <img src="images/react.png" alt="">
+                            </div>
+                            <p class="skill-write">React.JS</p>
+                        </div>       
+                        <div class="wrap">
+                            <div class="green-icon">
+                                <img src="https://img.icons8.com/fluency-systems-filled/32/null/nextjs.png"/>
+                            </div>
+                            <p class="skill-write">Next.JS</p>
+                        </div>       
+                        <div class="wrap">
+                            <div class="green-icon">
+                                <img src="https://img.icons8.com/color/32/null/tailwindcss.png"/>
+                            </div>
+                            <p class="skill-write">Tailwind CSS</p>
+                        </div>            
+                        <div class="wrap">
+                            <div class="green-icon">
+                                <img src="https://img.icons8.com/color/32/null/bootstrap.png"/>
+                            </div>
+                            <p class="skill-write">Bootstrap</p>
+                        </div>  
+                        <div class="wrap">
+                            <div class="green-icon">
+                                <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/32/null/external-front-end-computer-programming-flaticons-flat-flat-icons.png"/>
+                            </div>
+                            <p class="skill-write">Frontend WebD</p>
+                        </div>     
                     </div>
                 </div>
                 <div class="column right">
@@ -353,20 +427,41 @@
             <div class="position-contain">
                 <div class="position-grid pos-item">
                 
+                    <div class="pos-item">
+                        <a href="https://localloop.co.in/" target="_blank"><img src="images/codebase.png" alt=""></a>
+                        <div class="pos-description">
+                            <div  class="category-tag" style="background-color: #0d9f8c ;" >Team Member</div>
+                            <div class="content-title">Team Member @Devigners IIITKota</div>
+                            <div class="position-date">November, 2022 - Present</div>
+                        </div>
+                    </div>
+                    <div class="pos-item">
+                        <a href="https://codeincommunity.tech/teammembers" target="_blank"><img src="images/codein-community.png" alt=""></a>
+                        <div class="pos-description">
+                            <div  class="category-tag" style="background-color: rgb(235 193 28) ;" >Tech Team member</div>
+                            <div class="content-title">Contribute to existing CodeIN Community's Website</div>
+                            <div class="position-date">December, 2022 - Present</div>
+                        </div>
+                    </div>
+                    <div class="pos-item">
+                        <a href="https://mnityouthfest.in/" target="_blank"><img src="images/Youthfest.png" alt=""></a>
+                        <div class="pos-description">
+                            <div  class="category-tag" style="
+                            background: linear-gradient(45deg,#3f212f,#52262f 52.7%,#230d2f);
+                            background-image: url(images/youthfest_background.png);
+                            background-position: center;
+                            " >Next.JS Developer</div>
+                            <div class="content-title">Build up the YouthFestMnit'23 website with team of mnit senior</div>
+                            <!-- <div class="content-title" style="font-size: 18px;">Developed and Responsive to the YouthFest Mnit'23 with team of mnit seniors</div> -->
+                            <div class="position-date" style="margin-top: 32px; margin-bottom: 0px;">Dec 2022 - Jan 2023</div>
+                        </div>
+                    </div>
                     <div class="pos-item">      <!-- IMG Ratio  -     353.344 x 146.281  -->
                         <a href="https://iiitkota.ac.in/" target="_blank"><img src="images/position-work1.png " alt=""></a>
                         <div class="pos-description">
                             <div  class="category-tag" style="background-color: hsla(43.51351351351351, 92.50%, 52.94%, 1) ;" >Volunteer</div>
                             <div class="content-title">Handled the Designing part of the oﬃcial IIIT Kota's website</div>
-                            <div class="position-date">July, 2022 - Present</div>
-                        </div>
-                    </div>
-                    <div class="pos-item">
-                        <a href="https://localloop.co.in/" target="_blank"><img src="images/Local loop.png" alt=""></a>
-                        <div class="pos-description">
-                            <div  class="category-tag" style="background-color: rgb(255,95,0) ;" >UX Design</div>
-                            <div class="content-title">Role as a UI/UX Designer in Team Project</div>
-                            <div class="position-date">July, 2022 - Present</div>
+                            <div class="position-date">July, 2022 - Dec, 2022</div>
                         </div>
                     </div>
                     <div class="pos-item">
@@ -537,5 +632,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="theme/js/color-switcher.js"></script>
 </body>
 </html>

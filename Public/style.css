@@ -30,7 +30,7 @@ div{
     z-index: 999;
 }
 .navbar.sticky{
-    background: crimson;
+    background: var(--skin-color);
     padding:15px 0;
     box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
 }
@@ -53,7 +53,7 @@ div{
     transform: color 0.3s ease;
 }
 .navbar .menu li a:hover {
-    color:crimson;
+    color:var(--skin-color);
 
 }
 .navbar.sticky  .menu li .menu-btn:hover{
@@ -75,7 +75,18 @@ div{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+.style-switcher h4{
+    background: linear-gradient(90deg,#f2bc56,#e17979 51.2%,#787efa);
+    /* background-size: 70%; */
+    font-size: larger;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.colors span{
+    /* filter: drop-shadow(0px 0px 5px var(--skin-color)); */
+    /* box-shadow: inset 0px 0px 4px black; */
+}
 /* Menu btn styling */
 .menu-btn{
     color:#fff;
@@ -86,7 +97,7 @@ div{
     position:fixed;
     height:45px;
     width:42px;
-    background: crimson;
+    background: var(--skin-color);
     right:30px;
     bottom:10px;
     text-align: center;
@@ -137,7 +148,7 @@ section {
     height: 129px;
     border-radius: 200px;
     border-top: 5px solid transparent;
-    border-left: 5px solid crimson;
+    border-left: 5px solid var(--skin-color);
     border-right: 5px solid white;
     border-bottom: 5px solid transparent;
     padding: 2px;
@@ -199,7 +210,7 @@ section {
 }
 .home .home-content .text-3 span{
     cursor: pointer;
-    color: crimson;
+    color: var(--skin-color);
     font-weight: 500;
 }
 
@@ -208,16 +219,18 @@ section {
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color:crimson;
+    color:var(--skin-color);
     font-weight: 500;
 }
 .typed-cursor.typed-cursor--blink{
     animation: typedjsBlink 0.7s infinite;
 }
-
+.typing-2{
+    color: var(--skin-color);
+}
 .position .max-width span{
     cursor: pointer;
-    color: crimson;
+    color: var(--skin-color);
     font-weight: 500;
 }
 
@@ -230,17 +243,17 @@ section {
 
 .home .home-content .rotate{
     display: inline-block;
-    background: crimson;
+    background: var(--skin-color);
     color: white;
     font-size: 25px;
     padding: 12px 35px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid var(--skin-color);
     transition: all 0.7s ease;
 }
 .home .home-content .rotate:hover{
-    color: crimson;
+    color: var(--skin-color);
     background: none;
     animation-name: rotate;
     animation-duration: 0.7s;
@@ -281,7 +294,7 @@ section {
 
 .typed-cursor{
     opacity: 1;
-    color: crimson;
+    color: var(--skin-color);
 } 
 
 
@@ -355,14 +368,14 @@ p {
 }
 .about .about-content .right a {
     display: inline-block;
-    background: crimson;
+    background: var(--skin-color);
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid var(--skin-color);
     transition: all 0.3s ease;
 }
 section{
@@ -417,7 +430,7 @@ section{
     transition: all 0.3s ease;
 }
 .projects .edu-content .card:hover {
-    background: crimson;
+    background: var(--skin-color);
 }
 .projects .edu-content .card:hover .fa {
     color: white;
@@ -502,7 +515,7 @@ section{
     height: 80px;
     justify-content: center;
     /* box-shadow: 0px 0px 0px white; */
-    box-shadow: 0px 2px 8px 0 crimson;
+    box-shadow: 0px 2px 8px 0 var(--skin-color);
     
     display: -webkit-box;
     display: -webkit-flex;
@@ -539,7 +552,7 @@ section .title::after {
     position: absolute;
     bottom: -12px;
     left: 50%;
-    color: crimson;
+    color: var(--skin-color);
     /* font-family: 'Ubuntu',sans-serif; */
     /* text-align: center; */
     font-size: 20px;
@@ -563,7 +576,7 @@ h2 {
 }
 .projects .edu-content .card i {
     font-size: 50px;
-    color: crimson;
+    color: var(--skin-color);
     transition: color 0.3s ease;
 }
 .projects .edu-content .card .text {
@@ -680,7 +693,7 @@ h2 {
 .position-grid.pos-item{
     display: grid;
     grid-column-gap:40px;
-    grid-row-gap: 16px;
+    grid-row-gap: 32px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
 }
@@ -775,7 +788,7 @@ h2 {
     text-shadow: 2px 2px 10px ;
     margin-right: 8px;
     font-size: 21px;
-    color: crimson;
+    color: var(--skin-color);
 }
 .common-touch .row a{
     color: #938f8f;
@@ -800,7 +813,7 @@ h2 {
     align-items: center;
     border-radius: 100%;
     background-color: rgba(128, 128, 128, 0.16);              /* change */
-    /* background-color: crimson; */
+    /* background-color: var(--skin-color); */
     /* border: 7px solid black; */
     transition: all 1000ms ease;                  
     max-width: 43px;                             /* change */
@@ -873,7 +886,7 @@ button, button:before, button:after {
     margin: 0;
     padding: 1.5rem 3.125rem;
     background-color: #3498db;
-    /* background-color: crimson; */
+    /* background-color: var(--skin-color); */
     border: none;
     border-radius: 0.3125rem;
     box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
@@ -1015,7 +1028,7 @@ footer{
     padding: 70px 5% 20px;
 }
 footer .rowf.left a{
-    color: crimson;
+    color: var(--skin-color);
 }
 .email-phone a{
     color: hsla(0, 0%, 100%, 0.7)
@@ -1031,7 +1044,7 @@ footer .profile-lite{
     margin-bottom: 10px;
 }
 footer .profile-lite a:hover{
-    color: crimson;
+    color: var(--skin-color);
 }
 .email-phone a:hover{
     color: white
@@ -1072,7 +1085,7 @@ footer .profile-lite a:hover{
     margin-right: 12px;
 }
 .sep-site{
-    color: crimson;
+    color: var(--skin-color);
     margin-right: 8px;
 }
 .rowf.left{
@@ -1098,7 +1111,7 @@ footer .profile-lite a:hover{
 }
 .navbar li ul li a:hover {
     background-color: transparent;
-    color: crimson;
+    color: var(--skin-color);
 }
 .navbar li:hover ul {
       position: fixed;
@@ -1122,7 +1135,7 @@ footer .profile-lite a:hover{
     border-top: 1px solid #c9d4d8;
 }
 .navbar.sticky li ul li a:hover {
-      color: crimson;
+      color: var(--skin-color);
       background-color: rgba(0, 0, 0, 0.582);
     
   }
@@ -1193,11 +1206,11 @@ footer .profile-lite a:hover{
   }
   .the-arrow.-left > .shaft {
     width: 0;
-    background-color: crimson;
+    background-color: var(--skin-color);
   }
   .the-arrow.-left > .shaft:before, .the-arrow.-left > .shaft:after {
     width: 0;
-    background-color: crimson;
+    background-color: var(--skin-color);
   }
   .the-arrow.-left > .shaft:before {
     transform: rotate(0);
@@ -1224,7 +1237,7 @@ footer .profile-lite a:hover{
     transform: rotate(-40deg);
   }
   .the-arrow > .shaft {
-    background-color: crimson;
+    background-color: var(--skin-color);
     display: block;
     height: 1px;
     position: relative;
@@ -1233,7 +1246,7 @@ footer .profile-lite a:hover{
     will-change: transform;
   }
   .the-arrow > .shaft:before, .the-arrow > .shaft:after {
-    background-color: crimson;
+    background-color: var(--skin-color);
     content: "";
     display: block;
     height: 1px;

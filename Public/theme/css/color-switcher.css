@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
+.style-switcher{
+    position: fixed;
+    right: 0;
+    top: 180px;
+    padding: 13px;
+    width: 200px;
+    z-index: 101;
+    border-radius: 10%;
+    transition: all 0.3s ease;
+    transform: translateX(100%);
+    
+}
+.style-switcher.open{
+    transform: translateX(-15px);
+}
+.style-switcher.open{
+    box-shadow: 0px 0px 10px var(--skin-color);
+    /* background-image: url(https://st2.depositphotos.com/8797398/11983/i/950/depositphotos_119835676-stock-photo-abstract-pink-watercolor-background.jpg);
+    background-position: center; */
+}
+.style-switcher .fa-solid{
+    color: crimson;
+    animation: rotate infinite 2s;
+    /* animation-duration: ; */
+    transform: rotate(360deg);
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+.style-switcher .s-icon{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--text-black-900);
+    right: 100%;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+.s-icon i{
+    line-height: 40px;
+}
+.s-icon:after{
+    border-radius: 50%;
+}
+.style-switcher-toggler{
+    top: 0;
+    box-shadow: inset 0 0 4px #000000;
+    
+}
+.style-switcher-toggler:hover{
+    /* top: 0; */
+    /* box-shadow: 0 0 6px #000000; */
+    box-shadow: 0 0 6px var(--skin-color);
+}
+.style-switcher h4{
+    /* font-family: 'ubuntu',sans-serif; */
+    font-family: 'Poppins',sans-serif;
+    margin: 0 0 8px;
+    color: black;
+    font-size: larger;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+.colors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.colors span{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.style-switcher .color-1{
+   background-color: crimson;
+
+}
+.style-switcher .color-2{
+    background-color: #db8c14;
+}
+.style-switcher .color-3{
+    background-color: #e0e012;
+}
+.style-switcher .color-4{
+    background-color: #dd1177;
+}
+.style-switcher .color-5{
+    background-color: #c412e7;
+}
+.style-switcher .color-6{
+    background-color: #12a6e0;
+}
