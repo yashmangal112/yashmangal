@@ -12,10 +12,10 @@ window.addEventListener("scroll",() =>{
 })
 
 const alternateStyles = document.querySelectorAll(".alternate-style");
-console.log(alternateStyles);
+// console.log(alternateStyles);
 function setActiveStyle(color){
     /*  */
-    console.log(color)
+    // console.log(color)
     localStorage.setItem("color",color);
     changeColor();  
 }

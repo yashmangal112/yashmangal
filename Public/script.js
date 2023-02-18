@@ -1,4 +1,4 @@
-console.log("js workmode on");
+console.log("Welcome!");
 
 $(document).ready(function(){
     $(window).scroll(function(){
@@ -67,5 +67,11 @@ $("a").click(function(){
     $("html, body").animate({ scrollTop: $("#"+pageId).offset().top }, 850);
 });
 
-
-
+// title 
+let docTitle = document.title;
+window.addEventListener("blur", ()=>{
+    document.title = "😤😤 Come Back !";
+});
+window.addEventListener("focus", ()=>{
+    document.title = docTitle;
+});
