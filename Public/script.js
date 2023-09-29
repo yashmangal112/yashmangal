@@ -69,9 +69,12 @@ $("a").click(function(){
 
 // title 
 let docTitle = document.title;
-window.addEventListener("blur", ()=>{
-    document.title = "😤😤 Come Back !";
-});
+
+//solved issue #3
+
+// window.addEventListener("blur", ()=>{
+//     document.title = "😤😤 Come Back !";
+// });
 window.addEventListener("focus", ()=>{
     document.title = docTitle;
 });
