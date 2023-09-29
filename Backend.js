@@ -29,7 +29,7 @@ var db = mongoose.connection;
 
 app.get("/", (req, res)=>{
     res.statusCode = 200;
-    (res.sendFile(path.join(__dirname, '/Public/index.html')));
+    res.sendFile(path.join(__dirname, '/Public/index.html'));
 })
 app.get("/index.html", (req, res)=>{
     res.statusCode = 200;
@@ -80,6 +80,9 @@ app.post('/submit', (req, res)=>{
             throw err;
         }
         console.log("Record Inserted Successfully");
+        
+        //changes
+        res.send('<script>alert("Record Inserted Successfully"); window.location="/index.html";</script>');
     });
 
     setTimeout(() => {
